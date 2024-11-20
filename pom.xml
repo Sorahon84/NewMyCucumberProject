@@ -21,7 +21,7 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.20.0</version>
+            <version>4.25.0</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
@@ -81,18 +81,13 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.33</version>
         </dependency>
-        <dependency>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-deploy-plugin</artifactId>
-            <version>3.0.0</version>
-        </dependency>
+
 
     </dependencies>
 
-
-
     <build>
         <plugins>
+
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -120,7 +115,7 @@
                             <!-- optional, per documentation set this to "true" to bypass generation of Cucumber Reports entirely, defaults to false if not specified -->
 
                             <!-- output directory for the generated report -->
-                            <outputDirectory>${project.build.directory}/cucumber-reports</outputDirectory>
+                            <outputDirectory>${project.build.directory}</outputDirectory>
                             <!-- optional, defaults to outputDirectory if not specified -->
                             <inputDirectory>${project.build.directory}</inputDirectory>
                             <jsonFiles>
