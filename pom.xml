@@ -86,23 +86,9 @@
             <artifactId>maven-deploy-plugin</artifactId>
             <version>3.0.0</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-deploy-plugin -->
-        <dependency>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-deploy-plugin</artifactId>
-            <version>3.0.0</version>
-        </dependency>
+
     </dependencies>
-    <distributionManagement>
-        <repository>
-            <id>local-repo</id>
-            <url>file://${project.basedir}/local-repo</url> <!-- Deploys to a local folder -->
-        </repository>
-        <snapshotRepository>
-            <id>local-snapshot-repo</id>
-            <url>file://${project.basedir}/local-snapshots</url> <!-- Deploys snapshots to a local folder -->
-        </snapshotRepository>
-    </distributionManagement>
+
 
 
     <build>
